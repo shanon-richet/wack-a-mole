@@ -18,3 +18,6 @@ main{
     height: 100px;
     z-index:1;
 }
+.taupe_visible:hover{
+    background-color: blanchedalmond;
+}
