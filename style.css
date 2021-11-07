@@ -1,0 +1,28 @@
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+button:hover {
+   cursor: pointer;
+}
+section {
+    background-color: pink;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.taupeCachee {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    z-index: 2;
+}
+.taupeVisible {
+    background-image: url(mole.png);
+    background-size: cover;
+    background-color: black;
+    width: 250px;
+    height: 250px;
+    z-index: 2;
+}
