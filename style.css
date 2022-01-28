@@ -1,6 +1,6 @@
 body {
-    color: whitesmoke;
-    background-image: linear-gradient(to right, darkgreen, olive);
+    color: #251605;
+    background-image: linear-gradient(to right, #0CF574, #CCA43B);
     font-size: 30px;
 }
 header {
@@ -36,14 +36,15 @@ section {
     border-radius: 50%;
     z-index: 1;
 }
-.taupeCachee {
+.hiddenMole {
     width: 200px;
     height: 200px;
-    background-color: black;
+    background-color: #251605;
     border-radius: 50%;
+    border: none;
     z-index: 2;
 }
-.taupeVisible {
+.visibleMole {
     background-image: url(mole.png);
     background-size: cover;
     background-color: black;
