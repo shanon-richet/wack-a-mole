@@ -1,7 +1,7 @@
 const main = document.querySelector('main')
 const clock = document.querySelector('.timer')
 const score = document.querySelector('.score')
-const holes = document.querySelectorAll('section')
+const holes = document.querySelectorAll('.hole-container')
 const taupes = document.querySelectorAll('.hiddenMole')
 const hole = document.querySelector('section')
 const chances = document.querySelectorAll('.chances img')
@@ -15,7 +15,6 @@ if (storedScores == ! null) {
         main.appendChild(scoreHistory)
     }
 }
-
 document.body.addEventListener('keydown', startEvent)
 function startEvent() {
     var x = event.keyCode;
@@ -39,9 +38,11 @@ function startGame() {
     }, 1000);
     setInterval(() => {
         visibleMole = taupes[randomIndex]
+        visibleMole.classList.remove('hiddenMole')
         visibleMole.classList.add('visibleMole')
         visibleMole.addEventListener('click', tapMole)
-        function tapMole() {
+        const tapMole = () => {
+            alert('e')
             visibleMole.classList.remove('visibleMole')
             score.value = scoreValue;
             scoreValue = scoreValue + 1
@@ -60,7 +61,11 @@ function startGame() {
 
                 }
             }
-        }, 1500);
-    }, 2000);
+        }, 1800)
+        visibleMole.classList.add('hiddenMole')
+    }, 3000)
+}
 
+taupes.onclick = () => {
+    alert('o')
 }
